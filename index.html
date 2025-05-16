@@ -7,16 +7,18 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body>
 
   <div class="invitation">
-
+    <audio id="bg-music" src="audio/тұсау кесер.m4a" loop></audio>
+    
     <!-- Верхний декор -->
     <div class="img-top">
       <img src="img/decor.png" class="image3" alt="цветы" />
       <img src="img/image1.png" class="image1" alt="фон большой" />
       <img src="img/image2.png" class="image2" alt="внутренняя арка" />
-      
+      <img src="img/play-button.png" class="music" alt="">
       <div class="title-block">
         <div class="asul">Асылым</div>
         <div class="Tysay">ТҰСАУ КЕСЕР</div>
@@ -101,6 +103,20 @@
     </div>
 
   </div>
-
+  <script>
+    const playButton = document.querySelector('.music');
+    const audio = document.getElementById('bg-music');
+  
+    playButton.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playButton.style.opacity = '0.5'; // например, чтобы показать, что включено
+      } else {
+        audio.pause();
+        playButton.style.opacity = '1';
+      }
+    });
+  </script>
+  
 </body>
 </html>
