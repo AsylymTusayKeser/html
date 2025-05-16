@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'KZ Sign Painter';
+  src: url('fonts/KZ_Sign_Painter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+  font-family: 'KZ Sign Painter', cursive;
+  background-color: #F7EAE8;
+  color: #333;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+
+.invitation {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.img-top{
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image1 {
+  margin-top: 115px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.image2 {
+  margin-top: 135px;
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  z-index: 2;
+}
+
+.image3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.image5 {
+  position: absolute;
+  top: 830px;
+  left: 0;
+  z-index: 5;
+}
+
+.child-photo {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  z-index: 4;
+}
+
+.title-block{
+  position: absolute;
+  top: 310px;
+  left: 95px;
+  z-index: 6;
+  color: #704646;
+  text-align: center;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.asul {
+  font-size: 85px;
+  
+}
+
+.Tysay {
+  font-size: 40px;
+}
+
+.asul, .Tysay {
+  margin: 0;
+  line-height: 44px; 
+}
+
+.text {
+  background-color: #FFD3D3;
+  border-radius: 18px;       
+  max-width: 326px;
+  margin: 0 auto; 
+  text-align: center;
+  color: #704646;
+  padding: 0 24px;
+  padding-top: 37px;
+  padding-bottom: 40px;
+  margin-top: 73px;
+}
+
+.text1 {
+  font-size: 24px;
+  line-height: 25px;
+  padding-bottom: 24px;
+}
+
+.text2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.highlight-name {
+  font-size: 28px; 
+}
+
+.calendar-block {
+  border-radius: 24px;
+  padding: 30px 20px;
+  max-width: 360px;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-align: center;
+  font-family: 'KZ Sign Painter', cursive;
+  color: #704646;
+  position: relative;
+
+}
+
+.calendar-header p {
+  margin: 6px 0;
+  font-size: 35px;
+  line-height: 25px;
+}
+
+.calendar-header strong {
+  font-size: 16px;
+  color: #6D4B4B;
+  font-weight: normal;
+}
+
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.calendar th {
+  font-size: 20px;
+  color: #999;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.calendar td {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 6px;
+  position: relative;
+}
+
+/* Выходные дни */
+.weekend {
+  color: #D86C6C;
+}
+
+/* Акцент на 15 число */
+.today {
+  color: #D86C6C;
+  font-weight: bold;
+  position: relative;
+}
+
+.today::after {
+  content: "";
+  background-image: url('img/heart.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -10px;
+  top: -9px;
+  width: 60px;
+  height: 60px;
+}
+
+.calendar-time {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Центр по горизонтали */
+  gap: 20px; /* Отступ между текстом и картинкой */
+  padding: 30px;
+}
+
+.calendar-text {
+  text-align: left;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.calendar-img {
+  width: 120px;
+  height: 120px;
+  height: auto;
+}
+
+.location-section {
+  
+  text-align: center;
+  max-width: 360px;
+  margin: 40px auto;
+  color: #704646;
+}
+
+.location-header .pin-icon {  
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.location {
+  width: 50px;
+  height: 50px;
+}
+
+.location-header .label {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.location-header .address {
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  
+}
+
+.maps-icon {
+  width: 74px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.hosts .label {
+  margin-top: 74px;
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+
+.hosts p {
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  margin: 0 0 20px;
+}
+
+.final-message {
+  margin-top: 208px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+
