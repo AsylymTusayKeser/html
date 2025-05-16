@@ -61,15 +61,15 @@ body {
   margin-top: 115px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -10px;
   z-index: 1;
 }
 
 .image2 {
   margin-top: 135px;
   position: absolute;
-  top: -5px;
-  left: 20px;
+  top: -3px;
+  left: 10px;
   z-index: 2;
 }
 
@@ -164,13 +164,13 @@ body {
 
 .calendar-header p {
   margin: 6px 0;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 25px;
   font-family: 'KZ Monumenta', serif;
 }
 
 .calendar-header strong {
-  font-size: 16px;
+  font-size: 11px;
   color: #6D4B4B;
   font-weight: normal;
 }
@@ -229,11 +229,12 @@ body {
   gap: 20px; /* Отступ между текстом и картинкой */
   padding: 30px;
   font-family: 'KZ Monumenta', serif;
+  margin-top: 60px;
 }
 
 .calendar-text {
   text-align: left;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1;
 }
 
@@ -247,7 +248,7 @@ body {
 .location-section {
   text-align: center;
   max-width: 360px;
-  margin: 40px auto;
+  margin: 170px auto;
   color: #704646;
 }
 
@@ -258,8 +259,9 @@ body {
 }
 
 .location {
-  width: 50px;
-  height: 50px;
+  margin-top: 15px;
+  width: 30px;
+  height: 40px;
 }
 
 .location-header .label {
@@ -296,7 +298,8 @@ body {
 }
 
 .final-message {
-  margin-top: 208px;
+  position: relative;
+  margin-top: 300px;
   font-size: 40px;
   line-height: 50px;
 }
@@ -308,25 +311,30 @@ body {
 
 .image111 {
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
   width: 100%;
+  z-index: 11;
 }
 
 .ornament-left {
   position: absolute;
-  top: 32%;
+  top: 29%;
   right: 0;
   z-index: 10;
   opacity: 0.4; 
+  height: 2550px;
+  width: 33px;
 }
 
 .ornament-right {
   position: absolute;
-  top: 32%;
+  top: 29%;
   left: 0;
   z-index: 10;
   opacity: 0.4; 
+  height: 2550px;
+  width: 33px;
 }
 
 
@@ -335,37 +343,37 @@ body {
   width: 60px;
   height: 60px;
   top: 195px;
-  left: 180px;
+  left: 170px;
   z-index: 7;
 }
 
 .flowers-branch {
   position: absolute;
-  top: 2023px; /* отрегулируй по месту */
-  width: 180px; /* или сколько нужно */
+  top: 2130px; /* отрегулируй по месту */
+  width: 284px; /* или сколько нужно */
   right: 0px;
   z-index: 8;
 }
 
 .flowers {
   position: absolute;
-  top: 2696px;
+  top: 2890px;
   left: 0px;
-  width: 220px;
-  height: 220px;
+  width: 255px;
+  height: 268px;
   z-index: 8;
 }
 
 .flowers1 {
   position: absolute;
-  top: 1300px;
+  top: 1271px;
   left: 0px;
   z-index: 8;
 }
 
 .flowers2 {
   position: absolute;
-  top: 1050px;
-  right: 0px;
-  z-index: 8;
+    top: 1045px;
+    right: 0px;
+    z-index: 8;
 }
